@@ -333,9 +333,9 @@ def main():
     if all_errors:
         write_csv(error_path, ["partner", "file", "row_number", "error", "raw_row"], all_errors)
 
-    print(f"✅ Unified dataset written to: {args.output} (rows={len(all_rows)})")
+    print(f"Unified dataset written to: {args.output} (rows={len(all_rows)})")
     if all_errors:
-        print(f"⚠️  Error report written to: {error_path} (errors={len(all_errors)})")
+        print(f"Error report written to: {error_path} (errors={len(all_errors)})")
 
 
 if __name__ == "__main__":
